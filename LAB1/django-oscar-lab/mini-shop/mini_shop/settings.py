@@ -180,7 +180,8 @@ AUTHENTICATION_BACKENDS = (
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': BASE_DIR / 'whoosh_index',
     },
 }
 
