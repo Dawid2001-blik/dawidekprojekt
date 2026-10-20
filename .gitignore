@@ -1,3 +1,10 @@
 venv/
 __pycache__/
 *.pyc
+# Pliki generowane lokalnie
+*.sqlite3
+__pycache__/
+media/cache/
+whoosh_index/
+.venv/
+venv/
